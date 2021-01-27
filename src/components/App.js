@@ -6,7 +6,7 @@ import Search from "./Search";
 import Footer from "./Footer";
 
 const api_key = 'f8dbbb3d';
-const api_url = "https://www.omdbapi.com/?s=man&apikey=" + api_key; 
+const api_url = "https://www.omdbapi.com/?s=2020&apikey=" + api_key; 
 
 const App = () => {
   const [movies, setMovies] = useState([]);
