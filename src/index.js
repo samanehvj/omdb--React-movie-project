@@ -10,9 +10,8 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
          <Route exact path="/"><App /></Route>
-         <Route path="/MovieDetail/:id"><MovieDetail /></Route>
-    </Switch>)
-    <App />
+         <Route path="/movie/:id"><MovieDetail /></Route>
+    </Switch>
   </BrowserRouter>,
   document.getElementById('root')
 );
