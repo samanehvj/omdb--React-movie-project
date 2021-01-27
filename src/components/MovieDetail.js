@@ -33,6 +33,14 @@ const MovieDetail = () => {
       <b>Year: {movie.Year}</b>
       <br />
       <b>Genre: {movie.Genre}</b>
+      <br />
+      <b>Released: {movie.Released}</b>
+      <br />
+      <b>Runtime: {movie.Runtime}</b>
+       <br />
+      <b>Director: {movie.Director}</b>
+      <br />
+      <b>Actors: {movie.Actors}</b>
 
 
     </div>
