@@ -7,17 +7,16 @@ const default_img =
 
 const MovieDetail = () => {
 
-    const [movie, setMovie] = useState([]);
+  const [movie, setMovie] = useState([]);
 
-    let { id } = useParams();
-    const api_key = 'f8dbbb3d';
+  let { id } = useParams();
+  const api_key = 'f8dbbb3d';
 
-    fetch(`https://www.omdbapi.com/?i=${id}&apikey=${api_key}`)
-    .then(response => response.json())
-    .then(result => setMovie(result.Search)) 
-    
-  const poster =
-    movie.Poster === "N/A" ? default_img : movie.Poster;
+  fetch(`https://www.omdbapi.com/?i=${id}&apikey=${api_key}`)
+  .then(response => response.json())
+  .then(result => setMovie(result)) 
+  
+  const poster = movie.Poster === "N/A" ? default_img : movie.Poster;
   return (
     <div className="movie" key={movie.imdbID}>
       
@@ -29,6 +28,13 @@ const MovieDetail = () => {
         />
       </div>
       <h2>{movie.Title}</h2>
+      <b>IMDb Rate: {movie.imdbRating}</b>
+      <br />
+      <b>Year: {movie.Year}</b>
+      <br />
+      <b>Genre: {movie.Genre}</b>
+
+
     </div>
   );
 };
