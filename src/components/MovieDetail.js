@@ -22,13 +22,13 @@ const MovieDetail = () => {
       
       <div>
         <img
-          width="200"
+          width="300"
           src={poster}
           alt={movie.Title}
         />
       </div>
-      <h2>{movie.Title}</h2>
-      <b>IMDb Rate: {movie.imdbRating}</b>
+      <h2 className="detail" > {movie.Title}</h2>
+      <b >IMDb Rate: {movie.imdbRating}</b>
       <br />
       <b>Year: {movie.Year}</b>
       <br />
