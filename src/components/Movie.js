@@ -13,12 +13,14 @@ const Movie = ({ movie }) => {
       <Link to={"/movie/"+movie.imdbID} >
       <div>
         <img
-          width="200"
+          width="250"
           src={poster}
           alt={movie.Title}
         />
       </div>
+      <button className="button">
       <h2>{movie.Title}</h2>
+      </button>
       </Link>
     </div>
   );
